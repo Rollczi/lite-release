@@ -1,4 +1,4 @@
-name: 'Lite Release'
+name: 'lite-release'
 description: 'Automated version management with customizable commit and release patterns.'
 author: 'rollczi'
 branding:
