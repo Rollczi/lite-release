@@ -1,6 +1,6 @@
 name: 'lite-release'
-description: 'Automated version management with customizable commit and release patterns.'
-author: 'rollczi'
+description: 'Automated versioning, tagging, and release management with smart snapshot bumping.'
+author: 'Rollczi'
 branding:
   icon: 'zap'
   color: 'orange'

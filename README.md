@@ -55,11 +55,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
           token: ${{ secrets.PAT }} # github token or PAT
 
       - name: Run Lite Release
-        uses: rollczi/lite-release@v1
+        uses: Rollczi/lite-release@v0.0.2-alpha
         with:
           # GitHub token or PAT (required)
           token: ${{ secrets.PAT }}
