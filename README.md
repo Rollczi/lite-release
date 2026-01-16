@@ -59,7 +59,7 @@ jobs:
           token: ${{ secrets.PAT }} # github token or PAT
 
       - name: Run Lite Release
-        uses: Rollczi/lite-release@v1
+        uses: rollczi/lite-release@v1
         with:
           # GitHub token or PAT (required)
           token: ${{ secrets.PAT }}
@@ -95,9 +95,9 @@ jobs:
 |--------------------------------|---------------------------------------------------|------------------------------------------------|
 | `token`                        | **Required**. GitHub PAT or `GITHUB_TOKEN`.       | N/A                                            |
 | `bump_type`                    | Type of version bump (`patch`, `minor`, `major`). | `patch`                                        |
-| `commit_release`               | Message for the release commit.                   | `build: release {VERSION}`                     |
+| `commit_release`               | Message for the release commit.                   | `Release {VERSION}`                            |
 | `commit_release_update_files`  | Comma-separated globs to update during Release.   | `**/*.gradle.kts, **/pom.xml, README.md`       |
-| `commit_snapshot`              | Message for the snapshot bump commit.             | `build: bump to snapshot {VERSION}`            |
+| `commit_snapshot`              | Message for the snapshot bump commit.             | `Snapshot {VERSION}`                           |
 | `commit_snapshot_update_files` | Comma-separated globs to update for Snapshot.     | `**/*.gradle.kts, **/pom.xml`                  |
 | `git_user_name`                | Name used for Git commits.                        | `github-actions[bot]`                          |
 | `git_user_email`               | Email used for Git commits.                       | `github-actions[bot]@users.noreply.github.com` |

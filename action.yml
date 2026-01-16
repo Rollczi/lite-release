@@ -1,6 +1,6 @@
 name: 'Lite Release'
 description: 'Automated version management with customizable commit and release patterns.'
-author: 'Rollczi'
+author: 'rollczi'
 branding:
   icon: 'zap'
   color: 'orange'
