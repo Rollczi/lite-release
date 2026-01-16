@@ -59,9 +59,10 @@ jq ".versionRelease = \"$NEW_RELEASE\" | .versionSnapshot = \"$OLD_SNAPSHOT\"" "
 
 # 6. Commit Release & Tag
 git add .
-git commit -m "$RELEASE_COMMIT_MESSAGE"
-git tag -a "v$NEW_RELEASE" -m "$RELEASE_TITLE"
-git push origin HEAD --tags
+git commit -m "$RELEASE_COMMIT_MESSAGE" || log "No changes to commit for release."
+git push origin HEAD
+git tag -af "v$NEW_RELEASE" -m "$RELEASE_TITLE"
+git push origin "v$NEW_RELEASE" --force
 
 # 7. Create GitHub Release
 log "Creating GitHub Release: $RELEASE_TITLE"

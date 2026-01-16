@@ -58,7 +58,7 @@ jobs:
           token: ${{ secrets.PAT }} # github token or PAT
 
       - name: Run Lite Release
-        uses: Rollczi/lite-release@v0.0.3-alpha
+        uses: Rollczi/lite-release@v0.0.4-alpha
         with:
           # GitHub token or PAT (required)
           token: ${{ secrets.PAT }}
